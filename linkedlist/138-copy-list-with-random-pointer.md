@@ -79,6 +79,14 @@ class Solution:
 ``` 
 4. 最优解参考<a href="https://leetcode.com/problems/copy-list-with-random-pointer/discuss/259899/Python-O(n)-100-faster-than-others">地址</a>
    思路可参考<a href="https://www.cnblogs.com/zuoyuan/p/3745126.html">地址</a>，自己画图也很好理解
+   
+The idea is to associate the original node with its copy node in a single linked list. In this way, we don't need extra space to keep track of the new nodes.
+The algorithm is composed of the follow three steps which are also 3 iteration rounds.
+
+1. Iterate the original list and duplicate each node. The duplicate of each node follows its original immediately.
+2. Iterate the new list and assign the random pointer for each duplicated node.
+3. Restore the original list and extract the duplicated nodes.
+参考 <a href="https://leetcode.com/problems/copy-list-with-random-pointer/discuss/43491/A-solution-with-constant-space-complexity-O(1)-and-linear-time-complexity-O(N)">地址</a>
 ```
 class Solution:
     def copyRandomList(self, head: 'Node') -> 'Node':
