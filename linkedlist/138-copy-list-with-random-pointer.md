@@ -84,7 +84,7 @@ class Solution:
     def copyRandomList(self, head: 'Node') -> 'Node':
         if head is None:
             return None
-        
+        <!-- 复制新节点到旧节点后，是一个新链表。新节点中复制temp.next保证链表连续 -->
         temp = head
         while temp != None:
             node = Node(temp.val, temp.next, None)
@@ -94,6 +94,7 @@ class Solution:
         temp1 = head
         while temp1 != None:
             if temp1.random != None:
+                #新旧链表相同节点相邻，新链表的random是旧链表random.next
                 temp1.next.random = temp1.random.next
             temp1 = temp1.next.next
         
@@ -101,9 +102,10 @@ class Solution:
         final = head.next
         temp2 = head.next
         while temp1 != None:
+            #保持原链表不变
             temp1.next = temp1.next.next
-            temp1 = temp1.next
 
+            temp1 = temp1.next
             if temp2.next != None:
                 temp2.next = temp1.next
             
