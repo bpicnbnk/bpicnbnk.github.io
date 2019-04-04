@@ -56,11 +56,44 @@ Note:
 
 
 # 解题思路及实现代码
+代码leetcode验证，在30/37时超时，超时时输入数据较大。
 ```
+from collections import Counter
+class FreqStack:
 
+    def __init__(self):
+        self.stack = []
+
+    def push(self, x: int) -> None:
+        self.stack.append(x)
+
+    def pop(self) -> int:
+        if self.stack:
+            dict = Counter(self.stack)
+            ndict = sorted(dict.items(), key=lambda item: item[1])
+            d, num = ndict[-1]
+            indexndict = -2
+            l = [d]
+            len = ndict.__len__()-1
+            while(len):
+                if(num == ndict[indexndict][1]):
+                    l.append(ndict[indexndict][0])
+                    indexndict -= 1
+                    len -= 1
+                else:
+                    break
+            
+            t = self.stack[::-1]
+            for i in t:
+                if(i in l):
+                    remove=i
+                    break
+            t.remove(remove)
+            self.stack = t[::-1]
+            return remove
 ```
-# 解法参考
-## 解法一<a href="https://leetcode.com/problems/maximum-frequency-stack/discuss/220134/Python-O(1)-time-360ms-beats-100">地址</a>
+# 参考解法
+## 一 <a href="https://leetcode.com/problems/maximum-frequency-stack/discuss/220134/Python-O(1)-time-360ms-beats-100">地址</a>
 1. self.freq2Val maps frequencies to its corresponding element.
 2. self.val2Freq is a simple counter, similar to collections.Counter() mapping elements to their frequencies.
 3. self.best holds the current highest frequency.
@@ -85,4 +118,4 @@ class FreqStack:
 ``` 
 4. self.best -= not valsWithBestFrequency decreases the current best frequency when there are no more elements that have this frequency.
 # 总结归纳
-这个题有点难度。pop()时返回并移除出现频率最高的元素，若出现多个相同频率则选择入栈最晚的元素。按照我的思路，push将元素压栈，pop查找所需元素会超时；要保证时间复杂度达到要求就需要每次执行push，pop时更新的元素及其频率变化，这种数据构造有点难度，如示例解法参考解法一。
+这个题有点难度。pop()时返回并移除出现频率最高的元素，若出现多个相同频率则选择入栈最晚的元素。按照我的思路，push将元素压栈，pop查找所需元素会超时；要保证时间复杂度达到要求就需要每次执行push，pop时更新的元素及其频率变化，这种数据构造有点难度，可参考解法一。
