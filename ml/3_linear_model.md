@@ -9,6 +9,7 @@ NFL：无论学习算法多聪明，学习算法多笨拙，它们的期望性�
 
 线性模型的内容与之前学过的数理统计，矩阵论相似。
 
-![3.1.jpg](https://i.loli.net/2019/05/15/5cdc1a30efdd453018.jpg)
-![3.2.jpg](https://i.loli.net/2019/05/15/5cdc19d45eb9e12851.jpg)
-![3.3.jpg](https://i.loli.net/2019/05/15/5cdc1a486f26615990.jpg)
+![3.1.jpg](pic/3.1.jpg)
+![3.2.jpg](pic/3.2.jpg)
+![3.3.jpg](pic/3.3.jpg)
+
