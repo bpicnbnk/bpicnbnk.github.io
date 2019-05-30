@@ -1,11 +1,13 @@
-# 4.决策树 笔记
+# 6.SVM 笔记
 
 笔记如下图。
 
-![决策树1.jpg](pic/4.1.jpg)
+![SVM1.jpg](pic/6.1.jpg)
 
-![决策树2.jpg](pic/4.2.jpg)
+![SVM2.jpg](pic/6.2.jpg)
 
-![决策树3.jpg](pic/4.3.jpg)
+![SVM3.jpg](pic/6.3.jpg)
 
-![决策树4.jpg](pic/4.4.jpg)
+![SVM4.jpg](pic/6.4.jpg)
+
+![SVM5.jpg](pic/6.5.jpg)
