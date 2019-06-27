@@ -8,8 +8,10 @@
 
 ![MEAC3.jpg](pic/2.3.jpg)
 
-<!-- ![MEAC4.jpg](pic/2.4.jpg)
+![MEAC4.jpg](pic/2.4.jpg)
 
 ![MEAC5.jpg](pic/2.5.jpg)
 
-![MEAC6.jpg](pic/2.6.jpg) -->
+![MEAC6.jpg](pic/2.6.jpg)
+
+![MEAC7.jpg](pic/2.7.jpg)
