@@ -13,12 +13,10 @@ class Solution1:
                 if nums[left] == nums[right]:
                     mainnum = nums[left]
                     countnum += 2
-
             else:
                 if nums[left] == nums[right]:
                     if mainnum == nums[left]:
                         countnum += 2
-
                     else:
                         countnum -= 2
             left += 2
