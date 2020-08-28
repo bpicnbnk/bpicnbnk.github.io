@@ -1,3 +1,20 @@
+# 第4次打卡
+leetcode 1：https://github.com/bpicnbnk/bpicnbnk.github.io/blob/master/array2/1_twoSum.md
+
+leetcode 15：https://github.com/bpicnbnk/bpicnbnk.github.io/blob/master/array2/15_threeSum.md
+
+leetcode 16：https://github.com/bpicnbnk/bpicnbnk.github.io/blob/master/array2/16_threeSumClosest.md
+
+leetcode 18：https://github.com/bpicnbnk/bpicnbnk.github.io/blob/master/array2/18_fourSum.md
+
+leetcode 49：https://github.com/bpicnbnk/bpicnbnk.github.io/blob/master/array2/49_groupAnagrams.md
+
+leetcode 149：https://github.com/bpicnbnk/bpicnbnk.github.io/blob/master/array2/149_maxPoints.md
+
+leetcode 447：https://github.com/bpicnbnk/bpicnbnk.github.io/blob/master/array2/447_numberOfBoomerangs.md
+
+leetcode 545：https://github.com/bpicnbnk/bpicnbnk.github.io/blob/master/array2/454_fourSumCount.md
+
 # 第3次打卡
 leetcode 202：https://github.com/bpicnbnk/bpicnbnk.github.io/blob/master/array/202_isHappy.md
 
