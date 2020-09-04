@@ -20,6 +20,8 @@ class Solution:
         return False
 
 
+s = Solution()
 nums = [-1, 2, 1, -4]
-result = s.threeSumClosest(nums)
+t = 3
+result = s.findNumberIn2DArray(nums, t)
 print(result)
